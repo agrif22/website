@@ -47,7 +47,7 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <img src="frontend/images/avatar-1.png" height="60">
+                                            <img src="{{ url('frontend/images/avatar-1.png') }}" height="60">
                                         </td>
                                         <td class="align-middle">Agus Rifqi</td>
                                         <td class="align-middle">ID</td>
@@ -55,13 +55,13 @@
                                         <td class="align-middle">Aktif</td>
                                         <td class="align-middle">
                                             <a href="#">
-                                                <img src="frontend/images/ic_foods.png" height="23">
+                                                <img src="{{ url('frontend/images/ic_foods.png') }}" height="23">
                                             </a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img src="frontend/images/avatar-2.png" height="60">
+                                            <img src="{{ url('frontend/images/avatar-2.png') }}" height="60">
                                         </td>
                                         <td class="align-middle">Galih</td>
                                         <td class="align-middle">SG</td>
@@ -69,7 +69,7 @@
                                         <td class="align-middle">Aktif</td>
                                         <td class="align-middle">
                                             <a href="#">
-                                                <img src="frontend/images/ic_foods.png" height="23">
+                                                <img src="{{ url('frontend/images/ic_foods.png') }}" height="23">
                                             </a>
                                         </td>
                                     </tr>
@@ -155,7 +155,7 @@
                             </p>
                             <div class="bank">
                                 <div class="bank-item pb-3">
-                                    <img src="frontend/images/ic_bank.png" alt="" class="bank-image">
+                                    <img src="{{ url('frontend/images/ic_bank.png') }}" alt="" class="bank-image">
                                     <div class="description">
                                         <h3>PSHT Rayon Ceger</h3>
                                         <p>123-456-789-3
@@ -168,7 +168,7 @@
                                     <div class="clearfix"></div>
                                 </div>
                                 <div class="bank-item pb-3">
-                                    <img src="frontend/images/ic_bank.png" alt="" class="bank-image">
+                                    <img src="{{ url('frontend/images/ic_bank.png') }}" alt="" class="bank-image">
                                     <div class="description">
                                         <h3>PSHT Rayon Ceger</h3>
                                         <p>123-456-789-0
@@ -184,10 +184,10 @@
 
                         </div>
                         <div class="join-container">
-                            <a href="#" class="btn btn-block btn-join-now mt-3 py-2">Bayar Sekarang</a>
+                            <a href="{{ url('/checkout/success') }}" class="btn btn-block btn-join-now mt-3 py-2">Bayar Sekarang</a>
                         </div>
                         <div class="text-center mt-3">
-                            <a href="#" class="text-muted">Batalkan</a>
+                            <a href="{{ url('/') }}" class="text-muted">Batalkan</a>
                         </div>
                     </div>
                     </div>
@@ -209,7 +209,7 @@
             $(".datepicker").datepicker({
                 uiLibrary :"bootstrap4",
                 icons : {
-                    rightIcon : "<img src='frontend/images/kalender.png' height = '20'/>"
+                    rightIcon : "<img src='{{ url("frontend/images/kalender.png") }}' height = '20'/>"
                 }
             });
         });

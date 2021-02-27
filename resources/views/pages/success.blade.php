@@ -1,4 +1,4 @@
-@extends('layouts.checkout')
+@extends('layouts.success')
 @section('title')
     Checkout Success
 @endsection
@@ -7,7 +7,7 @@
 <main>
     <div class="section-success d-flex align-items-center">
      <div class="col text-center">
-         <img src="{{ url('frontend/images/logo.png') }}" alt="">
+         <img src="{{ url('frontend/images/email.png') }}" alt="">
          <h1>Yaay! Berhasil</h1>
          <p>
              Kami kirimkan E-mail untuk informasi Pembayaran
