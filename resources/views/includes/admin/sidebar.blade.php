@@ -28,7 +28,7 @@
             <span>Galeri Travel</span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="{{ route('transaction.index') }}">
             <i class="fas fa-file-invoice-dollar"></i>
             <span>Transaksi</span></a>
     </li>
