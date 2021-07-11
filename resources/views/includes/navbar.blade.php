@@ -6,7 +6,7 @@
     <div class="container">
         <nav class="row navbar navbar-expand-lg navbar-light bg-white">
           <a class="navbar-brand" href="{{ url('/') }}">
-            <img src="frontend/images/logo.png" alt="" />
+            <img src="{{ url('../frontend/images/logo.png') }}" alt="" />
           </a>
           <button
             class="navbar-toggler navbar-toggler-right"

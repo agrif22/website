@@ -44,11 +44,10 @@ body {
 
 // Header
 header {
-  margin-top: -68px;
   padding: 180px 0 165px;
-  background-image: url('../images/header-background@2x.jpg');
+  margin-top: -68px;
+  background-image: url('"../images/header-background@2x.jpg');
   background-size:cover;
-  // background-size: contain;
 
   h1,
   p {

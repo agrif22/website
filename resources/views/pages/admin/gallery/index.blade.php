@@ -28,7 +28,7 @@
                         <td>{{ $item ->id }}</td>
                         <td>{{ $item ->travel_package->title }}</td>
                         <td>
-                            <img src="{{ Storage::url($item->image) }}" alt="">
+                            <img style="width:10%" src="{{ Storage::url($item->image) }}" alt="">
                         </td>
                         <td>
                             <a href="{{ route('gallery.edit', $item->id) }}" class="btn btn-info">

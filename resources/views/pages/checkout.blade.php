@@ -30,8 +30,17 @@
                 <div class="row">
                     <div class="col-8 col-lg-0">
                         <div class="card card-details">
+                            @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
                             <h1>Who is Going</h1>
-                            <p>Trip to Ubud, Bali, Indonesia</p>
+                            <p>Trip to {{ $item->travel_package->title }},{{ $item->travel_package->location }}</p>
                         <div class="attendee">
                             <table class="table table-responsive-sm text-center">
                                 <thead>
